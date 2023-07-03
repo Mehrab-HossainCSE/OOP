@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+class Animal
+{
+public:
+    void func(int x)
+    {
+        cout<<"the integer value is :"<<x<<endl;
+
+    }
+
+    void func(double x)
+    {
+        cout<<"the double value is :"<<x<<endl;
+
+    }
+
+    void func(string x)
+    {
+        cout<<"the string value is :"<<x<<endl;
+
+    }
+
+};
+int main()
+{
+    Animal obj;
+    obj.func("pavel");
+    obj.func(2);
+    obj.func(3.3);
+    return 0;
+}
