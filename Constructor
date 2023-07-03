@@ -1,0 +1,56 @@
+#include<bits/stdc++.h>
+using namespace std;
+class student
+{
+   public:
+   string name;
+   int id;
+   bool gender;
+
+   //default constructor
+   student()
+   {
+       cout<<"This is default constructor"<<endl;
+   }
+   //paramaterized consturctor
+   student(string name, int id, bool gender)
+   {
+       this->name=name;
+       this->id=id;
+       this->gender=gender;
+
+   }
+   //Constructor overload
+   student(int name, int id)
+   {
+       this->name=name;
+       this->id=id;
+   }
+   //copy constructor
+   student(student &p)
+   {
+       name=p.name;
+       id=p.id;
+       gender=p.gender;
+
+
+   }
+   void studentInfo()
+   {
+       cout<<"Name is: "<<name<<endl;
+       cout<<"Id is: "<<id<<endl;
+       cout<<"Gender is: "<<gender<<endl;
+   }
+};
+int main()
+{
+   student obj1;//auto default canustor call
+   student obj2("pavel",134,1);
+   obj2.studentInfo();
+   student obj3(obj2);
+
+   obj3.studentInfo();
+
+
+    return 0;
+}
