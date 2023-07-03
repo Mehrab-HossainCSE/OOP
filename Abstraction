@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+class A{
+
+private:
+    int a,b;
+public:
+    void set(int x,int y)
+    {
+        a=x;
+        b=y;
+    }
+    void display()
+    {
+        cout<<"a is= "<<a<<endl;
+        cout<<"b is= "<<b<<endl;
+    }
+
+};
+int main()
+{
+    A obj;
+    obj.set(2,3);
+    obj.display();
+    return 0;
+}
