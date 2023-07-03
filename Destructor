@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int count = 0 ;
+
+class num
+{
+    public:
+    num()
+    {
+
+       count++;
+       cout<<"constructor is called: "<<count<<endl;
+    }
+
+    ~num()
+    {
+
+
+       cout<<"Deconstructor is called: "<<count<<endl;
+       count--;
+    }
+};
+int main()
+{
+    num obj;
+
+    return 0;
+}
